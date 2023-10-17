@@ -21,12 +21,12 @@ const SelectPage = () => {
         </svg>
       </span>
       <h1>How did we do?</h1>
-      <p className="description color--gray">
+      <p className="description color--grey">
         Please let us know how we did with your support request. All feedback is
         appreciated to help us improve our offering!
       </p>
-      <div className="options-container color--gray flow-right">
-        <button  onClick={() => setCurrentStar(1)} className="options-background">1</button>
+      <div className="options-container color--grey flow-right">
+        <button  onClick={() => setCurrentStar(1)} className='options-background'>1</button>
         <button  onClick={() => setCurrentStar(2)}  className="options-background">2</button>
         <button  onClick={() => setCurrentStar(3)}  className="options-background">3</button>
         <button  onClick={() => setCurrentStar(4)}  className="options-background">4</button>

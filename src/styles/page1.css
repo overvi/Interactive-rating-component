@@ -28,9 +28,10 @@
 
 }
 
-.color--gray {
+.color--grey {
     color: var(--Light-Grey);
 }
+
 
 h1 {
     font-size: 1.5rem;
@@ -68,20 +69,20 @@ body {
     animation-duration: 0.5s;
     transition: background 200ms;
 }
-@keyframes backGround {
-    from {background-color: var(--Light-Grey)}
-    to {background-color: hsl(var(--Orange));}
-  }
 .options-container .options-background:hover {
-    animation-name: backGround;
     color: var(--White);
-    background-color: hsl(var(--Orange));
+    background-color: var(--Light-Grey);
     cursor: pointer;
 }
 
 
 .star {
     padding: 0.7rem 0.8rem 0.4rem;
+}
+
+.options-container .options-background:focus {
+    background-color: hsl(var(--Orange));
+    color: var(--White);
 }
 
 .options-background svg {
@@ -102,6 +103,7 @@ body {
     transition: background 500ms;
 
 }
+
 
 .btn:hover {
     background-color: var(--White);
