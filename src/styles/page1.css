@@ -54,6 +54,10 @@ body {
 
 }
 
+.options-container {
+    white-space: nowrap;
+}
+
 .options-background {
     display: inline-block;
     background-color: var(--Span-Bg);
