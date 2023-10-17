@@ -1,0 +1,111 @@
+:root {
+    --Orange: 25, 97%, 53%;
+
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+
+    --Box-Bg : rgba(30,37,47,255);
+    --Main-Bg : rgba(20,21,25,255);
+    --Span-Bg : rgba(39,48,53,255);
+    --Badge-Bg : rgba(38,47,56,255);
+}
+
+.flow-control > * + * {
+    margin-top: var(--space , 1.5rem);
+}
+
+.flow-control-large > * + * {
+    margin-top: 2rem;
+}
+
+.flow-right > * {
+    margin-right: 0.8rem;
+}
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.color--gray {
+    color: var(--Light-Grey);
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+body {
+    font-size: 13px;
+    line-height: 1.5;
+    font-family: 'Overpass', sans-serif;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: var(--Main-Bg);
+    color: var(--White);
+}
+
+.wrapper {
+    max-width: 18.5rem;
+    padding: 1.8rem;
+    border-radius: 7%;
+    background-color: var(--Box-Bg);
+
+}
+
+.options-background {
+    display: inline-block;
+    background-color: var(--Span-Bg);
+    border-radius: 50%;
+    padding: 0.8rem 1.20rem;
+    border: 0;
+    color: inherit;
+    animation-duration: 0.5s;
+    transition: background 200ms;
+}
+@keyframes backGround {
+    from {background-color: var(--Light-Grey)}
+    to {background-color: hsl(var(--Orange));}
+  }
+.options-background:hover {
+    animation-name: backGround;
+    color: var(--White);
+    background-color: hsl(var(--Orange));
+    cursor: pointer;
+}
+
+
+.star {
+    padding: 0.7rem 0.8rem 0.4rem;
+}
+
+.options-background svg {
+    transform: scale(0.9);
+}
+
+.btn {
+    background-color: hsl(var(--Orange));
+    border: 0;
+    padding: 0.7rem;
+    width: 100%;
+    border-radius: 100vw;
+    color: inherit;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    cursor: pointer;
+
+    transition: background 500ms;
+
+}
+
+.btn:hover {
+    background-color: var(--White);
+    color: hsl(var(--Orange));
+}
+
+
+
+.description {
+    --space : 0.5rem
+}
